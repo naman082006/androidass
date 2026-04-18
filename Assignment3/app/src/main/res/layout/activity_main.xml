@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter First Number"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Second Number"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/first"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:id="@+id/second"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Result"
+        android:id="@+id/output"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:text="Add"
+            android:textSize="20sp"
+            android:id="@+id/add"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:text="Sub"
+            android:textSize="20sp"
+            android:id="@+id/sub"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:text="Mul"
+            android:id="@+id/mul"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:text="Div"
+            android:id="@+id/div"/>
+    </LinearLayout>
+
+</LinearLayout>
