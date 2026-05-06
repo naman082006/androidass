@@ -42,7 +42,26 @@ CheckBox c1,c2,c3,c4;
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    int id = rg.getCheckedRadioButtonId();
+                    RadioButton rb = findViewById(id);
 
+                    String device = rb.getText().toString();
+                    String feature = "";
+
+                    if(c1.isChecked())
+                        feature += c1.getText().toString()+" ";
+
+                    if(c2.isChecked())
+                        feature += c2.getText().toString()+" ";
+
+                    if(c3.isChecked())
+                        feature += c3.getText().toString()+" ";
+
+                    if(c4.isChecked())
+                        feature += c4.getText().toString()+" ";
+
+                    t1.setText("Selected Device: "+device);
+                    t2.setText("Selected Feature: "+feature);
                 }
             });
 
